@@ -167,6 +167,32 @@ a.social:hover {
   clear: both;
 }
 
+.experience-card {
+  margin: 30px 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: #efefef 1px solid;
+  border-radius: 20px;
+}
+
+.experience-headline {
+  background: linear-gradient(to right, #000, #f7f5f0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.list1,
+.list2 {
+  text-align: left;
+  line-height: 1.4;
+}
+
+.img-card {
+  width: 100%;
+  margin-top: 10px;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -203,5 +229,27 @@ a.social:hover {
     margin: 40px auto;
   }
 
+  .experience-card {
+    width: 50em;
+    margin: 30px auto;
+  }
+
+  .list1 {
+    width: 40%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .list2 {
+    width: 28%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .img-card {
+    width: 80%;
+  }
 }
 
