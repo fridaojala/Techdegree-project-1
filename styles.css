@@ -70,11 +70,11 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 4px solid #efefef;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.3) rotate(359deg);
 }
 .tag {
   background-color: #efefef;
@@ -173,6 +173,7 @@ a.social:hover {
   background-color: #ffffff;
   border: #efefef 1px solid;
   border-radius: 20px;
+  border-bottom: 4px solid #ffdaca;
 }
 
 .experience-headline {
@@ -193,6 +194,57 @@ a.social:hover {
   margin-top: 10px;
 }
 
+.contact-card {
+  margin: 30px 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: #efefef 1px solid;
+  border-radius: 20px;
+  border-bottom: 4px solid #ffdaca;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.flex-phone {
+  margin-bottom: 40px;
+}
+
+.icon {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-right: 20px;
+}
+
+.card-fullsize {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  background: #fff;
+  text-align: left;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-fullsize:hover {
+  border-color: #ff99ff;
+}
+
+.card-fullsize img{
+  width: 100%;
+}
+
+.card-fullsize ul {
+  padding: 0 0 15px 15px;
+  line-height: 1.4;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -203,6 +255,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   header {
@@ -250,6 +303,62 @@ a.social:hover {
 
   .img-card {
     width: 80%;
+  }
+
+  .contact-card {
+    width: 50em;
+    margin: 30px auto;
+  }
+
+  .icon {
+    height: 50px;
+    margin-right: 0;
+  }
+
+  .flex-box {
+    display: block;
+  }
+
+  .flex-social {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 500px;
+  }
+
+  .card-fullsize {
+    min-width: 720px;
+  }
+
+  .card-fullsize h2 {
+    text-align: center;
+  }
+
+  .card-fullsize img {
+    max-width: 30%;
+    border-radius: 5%;
+  }
+
+  .card-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card-fullsize ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 60%;
+    line-height: 3;
+  }
+
+  .card-fullsize li {
+    padding-right: 40px;
   }
 }
 
